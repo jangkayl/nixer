@@ -1,7 +1,13 @@
+import Feed from "@/components/Feed";
+import Sidebar from "@/components/Sidebar";
+import Users from "@/components/Users";
+
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			Home
+		<main className="flex justify-between max-w-6xl mx-auto py-5">
+			<Sidebar />
+			<Feed />
+			<Users />
 		</main>
 	);
 }
